@@ -180,7 +180,6 @@ const ages = [
   calcAge(years1[years1.length - 1]),
 ];
 console.log(ages);
-*/
 
 // built in functions to use with array called method
 
@@ -218,3 +217,29 @@ console.log(friends.includes(23));
 if (friends.includes("Steven")) {
   console.log("You have a firend called Steven");
 }
+
+*/
+
+const jonasArray = [
+  "Jonas",
+  "Sch",
+  2037 - 1991,
+  "teacher",
+  ["Micheal", "Peter", "Steven"],
+];
+
+//each of these keys are called property
+// Object literal syntax
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Sch",
+  age: 2037 - 1991,
+  job: "Teacher",
+  friends: ["Micheal", "Peter", "Steven"],
+};
+
+//group different varaible tahat belong together
+// diff is order doesnot matter when retrieving in object
+// arrays matter order
+
+//objets unstrucure data, data want to name.
