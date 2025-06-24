@@ -125,7 +125,7 @@ console.log(yearsUntilRetirement(1950, "Nash"));
 // calling cfunciton rniing onviking using ()
 // arguments - acutal values of functino paramers to input data, age value variable to save return v alue function output
 
-*/
+
 
 // FIRST data structures ARRAY
 const friend1 = "Micheal";
@@ -180,3 +180,41 @@ const ages = [
   calcAge(years1[years1.length - 1]),
 ];
 console.log(ages);
+*/
+
+// built in functions to use with array called method
+
+const friends = ["Micheal", "Steven", "Peter"]; // literral syntax
+//Push Method
+const newLength = friends.push("Jay");
+console.log(friends); //muteated original array isnice not primitve.
+console.log(newLength);
+
+//Beginning, unshift method
+friends.unshift("John");
+console.log(friends);
+
+// Remove elements
+friends.pop();
+const popped = friends.pop(); // Last Element
+console.log(popped);
+console.log(friends);
+
+friends.shift(friends); //First element
+console.log(friends);
+
+//method that tells which position
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("BSA"));
+
+//es6 method, includes
+
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes(23));
+
+if (friends.includes("Steven")) {
+  console.log("You have a firend called Steven");
+}
