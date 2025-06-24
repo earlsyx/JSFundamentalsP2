@@ -40,3 +40,26 @@ console.log(appleOrangeJuice);
 // block of code you want to reuse over and over again
 
 */
+
+//argument , actual value repalce parameter
+const age1 = calcAge1(1991);
+//Function declaration
+//epresison returns a value, statement block of codes that does something
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+//Function expression
+//function without a name, anonymous funciton
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1991);
+
+console.log(age1, age2);
+
+//functions are just value
+//diff between funciton declaration adn functino expression .
+// you can call function declariton efore they are defined in the fcode
+// can't because of hoisting
