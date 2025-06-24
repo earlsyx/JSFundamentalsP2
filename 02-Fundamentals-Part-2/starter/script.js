@@ -218,7 +218,6 @@ if (friends.includes("Steven")) {
   console.log("You have a firend called Steven");
 }
 
-*/
 
 const jonasArray = [
   "Jonas",
@@ -243,3 +242,50 @@ const jonas = {
 // arrays matter order
 
 //objets unstrucure data, data want to name.
+*/
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Sch",
+  age: 2037 - 1991,
+  job: "Teacher",
+  friends: ["Micheal", "Peter", "Steven"],
+};
+console.log(jonas);
+
+//preorpty from an object , . notation
+
+console.log(jonas.lastName); // . operator will go in the jonas object and retrieve property called lastname
+console.log(jonas["lastName"]); // bracket notation  specify with preopty name or key, put any exprsssion soorpeation something hat produces avlue.
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+// console.log(jonas.'last' + nameKey)
+
+//when to use dot and bracket
+//if you want to compute thep roepty name then bracket, otherwise just use dot notation
+
+// const interestedIn = prompt(
+//   "What do you want to know about Me, CHOOSE beteewen firstName, lastName, age, Job and friends"
+// );
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log("Wrong request");
+// }
+
+jonas.location = "Port";
+jonas["Twitter"] = "@tst";
+console.log(jonas);
+
+//Challenge
+// "Jonas has 3 friends, and his best friend is called Micheal"
+
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
+
+//member access , comptuer memver access . and {}
