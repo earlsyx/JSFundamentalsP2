@@ -78,7 +78,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1980, "Bobe"));
-*/
+
 
 function cutFruitPieces(fruit) {
   return fruit * 4;
@@ -93,3 +93,34 @@ function fruitProcessor(apples, oranges) {
 } //parameters
 
 console.log(fruitProcessor(2, 3));
+
+*/
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retire  s in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} already retired`);
+    return -1;
+  }
+  // return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1950, "Nash"));
+
+//function body: block of code that we want to reuse. PRocesses the
+//function input data,
+// paramters: placeholders to receive input values. Like local variables of a funciton
+// Function name
+// return statement - to output a value from the function and terminate executiton
+// calling cfunciton rniing onviking using ()
+// arguments - acutal values of functino paramers to input data, age value variable to save return v alue function output
