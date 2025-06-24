@@ -289,7 +289,7 @@ console.log(
 );
 
 //member access , comptuer memver access . and {}
-*/
+
 //Obejcts method
 
 const jonas = {
@@ -338,3 +338,20 @@ console.log(jonas.getSummary());
 
 //arrays are also objec,ts they arejust speial kind of objects
 // in other words they have methods that can manipulate them push pop, shift, unshift etc. built in
+
+// If else control strucutrues, another one is loops.
+
+// loop fundamentals, automate repettive task
+// gym liftwaite 10 rep
+
+// console.log("Lifting weights repetition 1 ");
+// console.log("Lifting weights repetition 1 ");
+// console.log("Lifting weights repetition 1 ");
+// console.log("Lifting weights repetition 1 ");
+
+//counter, condition, iterator    keeps running whiel condition is true
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep} `);
+}
+
+*/
