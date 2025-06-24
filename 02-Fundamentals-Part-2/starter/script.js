@@ -63,7 +63,6 @@ console.log(age1, age2);
 //diff between funciton declaration adn functino expression .
 // you can call function declariton efore they are defined in the fcode
 // can't because of hoisting
-*/
 
 //Arrow function
 const calcAge3 = (birthYear) => 2037 - birthYear;
@@ -79,3 +78,18 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1980, "Bobe"));
+*/
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} peice of apples and ${orangePieces} piece of oranges`;
+  return juice;
+} //parameters
+
+console.log(fruitProcessor(2, 3));
