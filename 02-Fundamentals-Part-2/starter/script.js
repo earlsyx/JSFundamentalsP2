@@ -242,7 +242,7 @@ const jonas = {
 // arrays matter order
 
 //objets unstrucure data, data want to name.
-*/
+
 
 const jonas = {
   firstName: "Jonas",
@@ -289,3 +289,52 @@ console.log(
 );
 
 //member access , comptuer memver access . and {}
+*/
+//Obejcts method
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Sch",
+  birthYear: 1991,
+  job: "Teacher",
+  friends: ["Micheal", "Peter", "Steven"],
+  hasDriversLicense: false,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear; // function value
+  // },
+
+  // calcAge: function () {
+  //   return 2037 - this.birthYear; // function value
+  // },
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age; // function value
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge}-year old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
+};
+// Any function that is attached to an ojbe ct is called a method
+// in every method js gives as access to a special variable called this
+// this keyword is the variable that is basically equal to the object on which teh method is called
+// so it is equal to the object calling the method
+console.log(jonas.calcAge());
+// console.log(jonas["calcAge"](1991));
+
+console.log(jonas.age);
+
+console.log(jonas.age);
+
+console.log(jonas.age);
+
+// Challenge
+// "Jonas is a 46-year old teacher, and he has a driver's license"
+
+console.log(jonas.getSummary());
+
+//arrays are also objec,ts they arejust speial kind of objects
+// in other words they have methods that can manipulate them push pop, shift, unshift etc. built in
