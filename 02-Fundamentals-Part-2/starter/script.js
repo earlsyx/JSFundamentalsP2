@@ -355,3 +355,21 @@ for (let rep = 1; rep <= 30; rep++) {
 }
 
 */
+
+/*Binary search
+int l = 0, r = nums.Length - 1;
+
+while (l < r) {
+  int mid = l + (l - r) / 2;
+  if (target < num[mid]) {
+    l = m + 1;
+  }
+  else if ( target > num[mid]) {
+   r = mid - 1;
+   }
+   return mid;
+}
+
+return - 1;
+
+*/
