@@ -422,3 +422,26 @@ Public class Solution {
  }
   
  */
+
+/*bINARY SEARCH
+
+public int BinarySearch(int[] nums, int target) {
+
+ l = 0, r < nums.Length;
+
+ while (l < r) {
+ int mid = l + (l - r) / 2;
+ if (target > nums[mid]) {
+    mid = r + 1;
+ }
+else if (target < nums[mid]) {
+  mid = l - 1;
+}
+  else return mid;
+
+ }
+
+ return - 1;
+}
+
+*/
